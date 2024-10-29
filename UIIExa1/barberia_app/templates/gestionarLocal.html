@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block titulo %} Gestión Locales {% endblock %}
+
+{% block cuerpo %} 
+
+    <h1>Gestión Locales  Octavio Ozaeta</h1>
+    {% for m in loslocales %}
+
+        <li> {{m.id_local}}.-.-.-.{{m.direccion}}.-.-.-.{{m.color}}.-.-.-.{{m.telefono}}.-.-.-.{{m.trabajadores}}.-.-.-.{{m.horarios}}.-.-.-.{{m.ambiente}}.-.-.-.{{m.servicios}} </li>
+
+    {% endfor %}
+{% endblock %}
